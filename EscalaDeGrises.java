@@ -24,7 +24,7 @@ public class EscalaDeGrises extends javax.swing.JFrame {
         };
     }
 
-    public static BufferedImage EscalaDeGrises(BufferedImage img) {
+    public static BufferedImage Filtro(BufferedImage img) {
         BufferedImage retorno = new BufferedImage(img.getWidth(), img.getHeight(), 2);
         for (int c = 0; c < img.getWidth(); c++) {
             for (int f = 0; f < img.getHeight(); f++) {
@@ -57,7 +57,7 @@ public class EscalaDeGrises extends javax.swing.JFrame {
         initComponents();
         jLabel1.setIcon(
                 new ImageIcon(
-                        EscalaDeGrises(
+                        Filtro(
                                 cargarImagen("https://i.ibb.co/1z89vCH/image.jpg")
                         )
                 )
